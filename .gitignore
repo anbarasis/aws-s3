@@ -1,0 +1,7 @@
+node_modules
+.envlocal
+.idea
+.svn
+.DS_Store
+.vscode
+.editorconfig

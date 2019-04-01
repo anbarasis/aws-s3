@@ -1,0 +1,10 @@
+s3:
+  image: s3:1.0.0
+  command: "node index.js"
+  environment:
+    - S3_BUCKETNAME=bucketname
+    - S3_ACCESSKEY=accesskey
+    - S3_SECRETKEY=secretkey
+    - S3_REGION=regionname
+  restart: on-failure
+

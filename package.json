@@ -1,0 +1,22 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "file list from s3",
+  "main": "index.js",
+  "author": "Anbarasi",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "aws-sdk": "^2.432.0",
+    "chai": "^4.2.0",
+    "hapi": "^17.3.1",
+    "joi": "^14.3.1",
+    "mocha": "^6.0.2",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "local": "env $(cat .envlocal) node .",
+    "test": "env $(cat .env) node .",
+    "mochatest": "mocha $(find ./unit_test -name '*.js')"
+  }
+}
